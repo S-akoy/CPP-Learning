@@ -151,31 +151,56 @@ using namespace std;
 //	system("pause");
 //	return 0;
 //}
-int main() {
-	int arr[10];
-	int maxnum;
-	int minnum;
-	int xiabiao1;
-	int xiabiao2;
-	int i = 0;
-	for (i = 0; i <= 9; i++) {
-		cin >> arr[i];
-	}
-	minnum = arr[0];
-	maxnum = arr[0];
-	for (int i = 0; i <= 9; i++)
-	{
-		if (maxnum <= arr[i]){
-			maxnum = arr[i];
-			xiabiao1 = i;
-	}
-		if (minnum >= arr[i]) {
-			minnum = arr[i];
-			xiabiao2 = i;
-		}
-	}
-	cout << "The max num is " << xiabiao1 << endl;
-	cout << "Then min num is " << xiabiao2 << endl;
-	system("pause");
-	return 0;
-}
+//int main() {
+//	int arr[10];
+//	int maxnum;
+//	int minnum;
+//	int xiabiao1;
+//	int xiabiao2;
+//	int i = 0;
+//	for (i = 0; i <= 9; i++) {
+//		cin >> arr[i];
+//	}
+//	minnum = arr[0];
+//	maxnum = arr[0];
+//	for (int i = 0; i <= 9; i++)
+//	{
+//		if (maxnum <= arr[i]){
+//			maxnum = arr[i];
+//			xiabiao1 = i;
+//	}
+//		if (minnum >= arr[i]) {
+//			minnum = arr[i];
+//			xiabiao2 = i;
+//		}
+//	}
+//	cout << "The max num is " << xiabiao1 << endl;
+//	cout << "Then min num is " << xiabiao2 << endl;
+//	system("pause");
+//	return 0;
+//}
+//数组的输出
+//int main() {
+//	int a[1] = { 0 };
+//	cout << a[0] << endl;
+//	system("pause");
+//	return 0;
+//}
+//析构函数初步了解
+//class Ball {
+//public:
+//	int R = 0;
+//	void outp();
+//	Ball();
+//};
+//void Ball::outp() {
+//
+//}
+//Ball::Ball() {
+//	cout << "初始化完成" << endl;
+//}
+//int main() {
+//	Ball ball1;
+//	system("pause");
+//	return 0;
+//}
