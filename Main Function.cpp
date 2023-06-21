@@ -2,7 +2,6 @@
 #include <cmath>
 #include <stdlib.h>
 #include <Windows.h>
-using namespace std;
 
 //class Bookshelf {
 //private:
@@ -204,3 +203,48 @@ using namespace std;
 //	system("pause");
 //	return 0;
 //}
+//浅学static
+//class model {
+//public:
+//	static int x, y;
+//};
+//int model::x;
+//int model::y;
+//int main() {
+//	model X1;
+//	model::x = 0;
+//	return 0;
+//}
+class Box {
+public:
+	int lenth;
+	int height;
+	int width;
+public:
+	Box(void) {
+		int lenth = 0;
+		int height = 0;
+		int width = 0;
+		std::cout << "初始化完成" << std::endl;
+	}
+	void setWidth() {
+		std::cin >> width;
+	}
+	void setLenth() {
+		std::cin >> lenth;
+	}
+	void setHeight() {
+		std::cin >> height;
+	}
+
+};
+int main() {
+	Box box1;
+	Box* p = &box1;
+	p->setHeight();
+	std::cout << p->height << ' ' << std::endl;
+	box1.setHeight();
+	std::cout << p->height << ' ' << std::endl;
+	system("pause");
+	return 0;
+}
